@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #c3cfe2;
+}
+
+.social {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  top: 500px;
+  right: -370px;
+}
+
+.social__btn {
+  display: inline-block;
+  width: 450px;
+  height: 70px;
+  color: whitesmoke;
+  font-size: 30px;
+  padding: 18px 0px 18px 80px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.social__btn:hover {
+  -webkit-transform: translateX(-350px);
+          transform: translateX(-350px);
+}
+
+.social__btn::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateX(-55px);
+          transform: translateX(-55px);
+}
+
+.social__btn--blog {
+  background-color: #e17b77;
+}
+
+.social__btn--blog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f109";
+}
+
+.social__btn--twitter {
+  background-color: #00aced;
+}
+
+.social__btn--twitter::before {
+  content: "\f099";
+}
+
+.social__btn--linkedin {
+  background-color: #007bb6;
+}
+
+.social__btn--linkedin::before {
+  content: "\f0e1";
+}
+
+.social__btn--facebook {
+  background-color: #3b5998;
+}
+
+.social__btn--facebook::before {
+  content: "\f39e";
+}
+
+.social__btn--github {
+  background-color: #333;
+}
+
+.social__btn--github::before {
+  content: "\f09b";
+}
+/*# sourceMappingURL=style.css.map */

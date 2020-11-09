@@ -1,0 +1,67 @@
+body {
+  background: #c3cfe2;
+}
+
+.pic-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1120px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+.pic-container__item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.pic-container__item:hover {
+  background: #302d2d;
+}
+
+.pic-container__item:hover img {
+  opacity: 0;
+}
+
+.pic-container__item:hover button {
+  opacity: 1;
+}
+
+.pic-container__img {
+  display: block;
+  max-width: 100%;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.pic-container__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+@media (min-width: 720px) {
+  .pic-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 970px) {
+  .pic-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
